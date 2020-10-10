@@ -16,7 +16,7 @@ public class TrapExpansionBlockEntities {
 	public static BlockEntityType<DetectorBlockEntity> DETECTOR_BE;
 
 	public static void init() {
-		FAN_BE = registerBlockEntityType("fan", FanBlockEntity::new, TrapExpansionBlocks.FAN, TrapExpansionBlocks.ANALOG_FAN);
+		FAN_BE = registerBlockEntityType("fan", FanBlockEntity::new, TrapExpansionBlocks.FAN, TrapExpansionBlocks.ANALOG_FAN, TrapExpansionBlocks.SUPER_FAN);
 		DETECTOR_BE = registerBlockEntityType("detector", DetectorBlockEntity::new, TrapExpansionBlocks.DETECTOR);
 	}
 

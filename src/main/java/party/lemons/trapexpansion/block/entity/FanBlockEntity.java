@@ -36,7 +36,9 @@ public class FanBlockEntity extends BlockEntity implements Tickable {
 			Direction facing = state.get(FanBlock.FACING);
 			double range = ((FanBlock) state.getBlock()).getFanRange(state);
 
-			Box bb = new Box(0, 0, 0, 1, 1, 1).offset(pos.offset(facing)).stretch(facing.getOffsetX() * range, facing.getOffsetY() * range, facing.getOffsetZ() * range);
+			Box bb = new Box(0, 0, 0, 1, 1, 1)
+					.offset(pos.offset(facing))
+					.stretch(facing.getOffsetX() * range, facing.getOffsetY() * range, facing.getOffsetZ() * range);
 			List<Entity> entities = world.getEntities(Entity.class, bb, e -> true);
 
 			for (int i = 0; i < entities.size(); i++) {

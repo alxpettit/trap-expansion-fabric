@@ -1,0 +1,26 @@
+{
+	"type": "crafting_shaped",
+	"pattern": [
+		"###",
+		"#C#",
+		"#R#"
+	],
+	"key": {
+		"#": {
+			"item": "minecraft:lapis_lazuli"
+		},
+		"O": {
+			"tag": "minecraft:planks"
+		},
+		"C": {
+			"item": "trapexpansion:fan"
+		},
+		"R": {
+			"item": "minecraft:redstone_block"
+		}
+	},
+	"result": {
+		"item": "trapexpansion:super_fan",
+		"count": 1
+	}
+}

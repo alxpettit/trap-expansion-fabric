@@ -9,7 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 
-public class AnalogFanBlock extends FanBlock {
+public class AnalogFanBlock extends SuperFanBlock {
 	public static final IntProperty POWER = Properties.POWER;
 	
 	public AnalogFanBlock(Settings settings) {
